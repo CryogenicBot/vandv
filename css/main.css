@@ -1,0 +1,176 @@
+/* Front page style */
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #b4b4b4;
+}
+
+/*@media (screen < 880) {
+  body{
+    overflow-x: scroll;
+  }
+}*/
+
+/* STYLING FOR ALL BANNERS */
+.banner{
+  background-color: #f5f5f5;
+}
+
+/* STYLING FOR ALL CONTENT WRAPPERS */
+.content-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADER STYLING */
+/*============================================================================*/
+#header{
+  flex: initial;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 350%;
+  line-height: 70px;
+  text-align: center;
+}
+
+#header-content-wrapper {
+  display: flex;
+  direction: ltr;
+}
+
+#website-title{
+  flex: 1;
+}
+
+#website-title p, #header-remainder p{
+  margin: 0px;
+  padding: 0px;
+}
+
+a[href$="vandv.io"]{
+  text-decoration: none;
+  color: black;
+}
+
+#nav-map{
+  flex: 4;
+  margin: 0px 10px 0px 10px;
+  padding: 0px;
+  display: flex;
+}
+
+.nav-map-item, .drop-down, .drop-down li{
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  list-style: none;
+}
+
+.nav-map-item { /* each navigation item */
+  font-size: 50%;
+  flex: 1;
+}
+
+.drop-down li{ /* item inside drop down menu for each nav item */
+  font-size: 80%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.drop-down{ /* drop down menu for each nav item */
+  display: none;
+  position: absolute;
+  min-width: 175px;
+}
+
+#nav-map .nav-map-item:hover {
+  background-color: #7bc7fe;
+}
+
+#nav-map .nav-map-item:hover .drop-down{
+  display: block;
+  background-color: #f0f0f0;
+}
+
+#nav-map .nav-map-item:hover .drop-down li:hover{
+  border-left: 5px solid #0062a8;
+  padding-left: 15px;
+}
+
+#header-remainder{
+  flex: 0.6;
+  font-size: 30%;
+  font-weight: 300;
+  height: 100%;
+}
+/*============================================================================*/
+/* END OF HEADER STYLING */
+
+/* MAIN CONTENT STYLING */
+/*============================================================================*/
+
+#content{
+}
+
+#main-content-wrapper{
+  min-height: 1000px;
+  /*box-shadow:
+    -10px 0px 50px black,
+    10px 0px 50px black;*/
+  background-color: white;
+  display: flex;
+}
+
+.sidebar-wrapper {
+  flex: 2;
+  background-color: #d0d0d0;
+}
+
+.sidebar-content-wrapper{
+  height: 200px;
+  padding: 10px;
+  margin: 5px;
+  border: black solid 2px;
+  border-radius: 5px;
+}
+
+.sidebar-fixed{
+  position: fixed;
+  top: 0px;
+}
+
+.sidebar-content{
+  margin: 0px;
+  padding: 0px;
+  list-style-position: inside;
+}
+
+#main-bar{
+  flex: 5;
+}
+
+/*============================================================================*/
+/* END OF MAIN CONTENT STYLING */
+
+/* FOOTER STYLING */
+/*============================================================================*/
+#footer{
+  border-top: #767676 1px solid;
+}
+
+#footer-content-wrapper{
+  display: flex;
+  direction: ltr;
+  padding: 10px 0px 10px 0px;
+}
+
+#copyright{
+  font-size: 70%;
+  text-align: right;
+  flex: 1;
+}
+/*============================================================================*/
+/* END OF FOOTER STYLING */
